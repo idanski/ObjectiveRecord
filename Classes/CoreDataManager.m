@@ -120,7 +120,7 @@
 }
 
 - (BOOL)saveContext:(NSManagedObjectContext *)context {
-    @synchronized (this) {
+    @synchronized (self) {
         if (context == nil) return NO;
         if (![context hasChanges])return NO;
 
